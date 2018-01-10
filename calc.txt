@@ -1,0 +1,159 @@
+public class MainActivity extends AppCompatActivit {
+Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16;
+TextView t1;
+double d1=Double.NaN,d2;
+boolean add,sub,mul,div;
+@override
+protected void onCreate(Bundle savedInstanceState){
+super.onCreate(savedInstanceState);
+setContentView(R.layout.activity_main);
+B1=(Button)findviewbyId(R.id.button);
+B2=(Button)findviewbyId(R.id.button2);
+B3=(Button)findviewbyId(R.id.button3);
+B4=(Button)findviewbyId(R.id.button4);
+B5=(Button)findviewbyId(R.id.button5);
+B6=(Button)findviewbyId(R.id.button6);
+B7=(Button)findviewbyId(R.id.button7);
+B8=(Button)findviewbyId(R.id.button8);
+B9=(Button)findviewbyId(R.id.button9);
+B10=(Button)findviewbyId(R.id.button10);
+B11=(Button)findviewbyId(R.id.button11);
+B12=(Button)findviewbyId(R.id.button12);
+B13=(Button)findviewbyId(R.id.button13);
+B14=(Button)findviewbyId(R.id.button14);
+B15=(Button)findviewbyId(R.id.button15);
+B16=(Button)findviewbyId(R.id.button16);
+t1=(TextView)findviewbyId(R.id.textview);
+b15.setonClickListener(new.View.OnClickListener(){
+@override
+public void onClick()(View view){
+t1.setText("");
+d1=0;
+d2=0;
+add=false;
+sub=false;
+mul=false;
+div=false;
+}
+});
+b16.setOnClicklistener(new View.OnClicklistener(){
+@Override
+public void onClick(View view){
+t1.setText(t1.getText().toString() + "0"):
+}
+});
+b1.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+t1.setText(t1.getText().toString() + "1");
+}
+});
+b2.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+t1.setText(t1.getText().toString() + "2");
+}
+});
+b3.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+t1.setText(t1.getText().toString() + "3");
+}
+});
+b4.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+t1.setText(t1.getText().toString() + "4");
+}
+});
+b5.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+t1.setText(t1.getText().toString() + "5");
+}
+});
+ b6.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+t1.setText(t1.getText().toString() + "6");
+}
+});
+b7.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+t1.setText(t1.getText().toString() + "7");
+}
+});
+b8.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+t1.setText(t1.getText().toString() + "8");
+}
+});
+b9.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+t1.setText(t1.getText().toString() + "9");
+}
+});
+b10.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+d1=Double.parseDouble(t1.getText()+"");
+add=true;
+t1.setText("");
+}
+});
+b11.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+d1=Double.parseDouble(t1.gettext()+"");
+sub=true;
+t1.setText("");
+}
+});
+
+b12.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+d1=Double.parseDouble(t1.gettext()+"");
+mul=true;
+t1.setText("");
+}
+});
+b13.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+d1=Double.parseDouble(t1.gettext()+"");
+div=true;
+t1.setText("");
+}
+});
+b14.setOnClickListener(new View.OnClickListener(){
+@Override
+public void onClick(View view){
+d2=Double.parseDouble(t1.getText()+"");
+if(add==true)
+{
+t1.setText(d1+d2+"");
+add=false;
+}
+if(sub==true)
+{
+t1.setText(d1-d2+"");
+sub=false;
+}
+if(mul==true)
+{
+t1.setText(d1*d2+"");
+mul=false;
+}
+if(div==true)
+{
+t1.setText(d1/d2+"");
+div=false;
+}
+}
+});
+}
+}
